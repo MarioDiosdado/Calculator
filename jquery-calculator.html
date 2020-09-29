@@ -86,11 +86,7 @@
       var result;
       var arr = [];
 
-
-
-
-      
-
+      // Here we get first number
       $(".btn-primary").on("click", function (event) {
         var a = $(this).prop("value");
         arr.push(a);
@@ -98,7 +94,12 @@
 
       })
 
+      //Operator click
 
+      $(".btn-danger").on("click", function(){
+        var a = $(this).prop("value");
+        console.log(a);
+      })
 
 
     });
