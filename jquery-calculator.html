@@ -80,16 +80,23 @@
     $(document).ready(function () {
 
       // Your code here...
+      var firstNumber = $("#first-number");
+      var secondNumber;
+      var operator;
       var result;
       var arr = [];
 
+
+
+
+      
+
       $(".btn-primary").on("click", function (event) {
         var a = $(this).prop("value");
-        console.log(a);
         arr.push(a);
-        console.log(arr);
-      })
+        firstNumber.text(arr.join(""));
 
+      })
 
 
 
